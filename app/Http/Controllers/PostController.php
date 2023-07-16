@@ -11,4 +11,10 @@ class PostController extends Controller
      public function index() {
         return view('posts.index');
      }
+   
+   //作成ページ   
+   public function create() {
+      return view('posts.create');
+   }
 }
+
