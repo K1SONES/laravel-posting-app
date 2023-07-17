@@ -29,5 +29,9 @@ class PostController extends Controller
 
        return redirect()->route('posts.index')->with('flash_message', '投稿が完了しました。');
    }
+   //詳細ページ
+   public function show(post $post) {
+      return view('posts,show',compact('post'));
+   }
 }
 
