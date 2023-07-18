@@ -35,6 +35,12 @@
                             <div>
                                 <a href="{{ route('posts.show', $post) }}">詳細</a>
                                 <a href="{{ route('posts.edit', $post) }}">編集</a> 
+
+                                <form action="{{ route('posts.destroy', $post) }}" method="post">
+                                    @scrf
+                                    @method('delete')
+                                    <button type="submit">削除</button>
+                                </form>
                             </div>
                         </div>
                     </div>
