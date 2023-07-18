@@ -33,5 +33,9 @@ class PostController extends Controller
    public function show(post $post) {
       return view('posts,show',compact('post'));
    }
+   //更新ページ
+   public function edit(Post $post) {
+      return view('posts.edit', compact('post'));
+   }
 }
 
