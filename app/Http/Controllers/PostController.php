@@ -23,8 +23,8 @@ class PostController extends Controller
    // 作成機能
    public function store(Request $request) {
       $request->validate([
-         'title' => 'required',
-         'content' => 'required',
+         'title' => 'required|max40',
+         'content' => 'required|max200',
       ]);
 
        $post = new Post();

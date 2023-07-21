@@ -15,7 +15,9 @@
          <div class="card mb-3">
              <div class="card-body">
                  <h2 class="card-title fs-5">{{ $post->title }}</h2>
-                 <p class="card-text">{{ $post->content }}</p>    
+                 <p class="card-text">{{ $post->content }}</p>
+                 
+                 <!-- 投稿日時の取得 -->
                  
                  <div class="d-flex">
                      <a href="{{ route('posts.show', $post) }}" class="btn btn-outline-primary d-block me-1">詳細</a>
