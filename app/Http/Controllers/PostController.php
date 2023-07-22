@@ -11,7 +11,7 @@ class PostController extends Controller
 {
     // 一覧ページ
      public function index() {
-         $posts = Post::latest()->get();
+         $posts = Post::oldest()->get();
 
          return view('posts.index', compact('posts'));
       }

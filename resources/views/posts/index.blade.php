@@ -16,7 +16,7 @@
              <div class="card-body">
                  <h2 class="card-title fs-5">{{ $post->title }}</h2>
                  <p class="card-text">{{ $post->content }}</p>
-                 
+                 <p class="card-text">{{ $post->created_at }}</p>
                  <!-- 投稿日時の取得 -->
                  
                  <div class="d-flex">
